@@ -1,0 +1,20 @@
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_WORLD_APP_ID": "@next_public_world_app_id",
+    "NEXT_PUBLIC_WORLD_ACTION_ID": "@next_public_world_action_id"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
